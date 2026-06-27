@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <!-- header o msm que div mas para identificar o cabeçalho da página -->
+    <header>
+        <h1>MOEDA</h1>
+        <!-- nav o msm que div mas para identificar o menu da página -->
+        <nav>
+            <!-- nao vai ter link por enquanto-->
+            <a href="#">Cotação</a>
+            <a href="#">Wiki</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Bem-vindo à MOEDA</h2>
+        <p>Aqui você pode encontrar informações sobre moedas, cotações e muito mais. Explore nosso site para saber mais!</p>
+    </section>
+
+    <div class="content">
+        <p>Fique atualizado com as últimas notícias sobre moedas e economia.</p>    
+    </div>
+
+    <section class="footer">
+        <p>Moedas ao vivo</p> 
+<!-- tabela de cotações -->
+    <table>
+        <!-- cabeçalho -->
+        <thead>
+            <tr>
+                <th>Moeda</th>
+                <th>Cotação</th>
+                <th>Variação</th>
+            </tr>
+        </thead>
+        <!-- corpo da tabela -->
+        <tbody id="cotacoes">
+            <tr>
+                <td>Dólar</td>
+                <td id="usd-price">-</td>
+                <td id="usd-change" class="change">-</td>
+            </tr>
+            <tr>
+                <td>Euro</td>
+                <td id="eur-price">-</td>
+                <td id="eur-change" class="change">-</td>
+            </tr>
+            <tr>
+                <td>Libra</td>
+                <td id="gbp-price">-</td>
+                <td id="gbp-change" class="change">-</td>
+            <!-- Adicione mais linhas conforme necessário -->
+        </tbody>
+    </section>    
+    <!-- script para atualizar as cotações, para trabalbar com a API de cotações -->
+    <script src="script.js"></script>
+</body>
+</html>

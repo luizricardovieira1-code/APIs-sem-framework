@@ -1,0 +1,105 @@
+body {
+    /*font-family define a fonte */
+    font-family: Arial, sans-serif;
+    /*margin e padding definem a margem e o preenchimento da página */
+    margin: 0;
+    padding: 0;
+    /*background-color define a cor de fundo da página */
+    background-color: #000000;
+    /*color define a cor do texto da página */
+    color: #fcf9f9;
+}
+
+header {
+    /*display flex define o tipo de exibição para ficarem alinhados lado a lado */
+    display: flex;
+    /*justify-content define o alinhamento horizontal dos elementos dentro do header */
+    /*space-between define que os elementos serão distibuido primeiro a esquerda e depois a direita */
+    justify-content: space-between;
+    /*align-items define o alinhamento dentro do cabeçalho no centro ao longo do eixo vertical */   
+    align-items: center;
+    background-color: #1a1a1a;
+    /*padding define o preenchimento interno do header */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    /*font-size define o tamanho da fonte do título */
+    font-size: 2.5em;
+    margin: 0;
+    color: #21c119;
+}
+
+header nav a {
+    color: #fcfcfc;
+    /*text-decoration define a decoração do texto, nesse caso sem sublinhado */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+}
+
+.hero {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #21c119;
+}
+
+.content {
+    /*margin define a margem externa do conteúdo */
+    margin: 20px auto;
+    padding: 20px 20px;
+    /*max-width define a largura máxima do conteúdo */
+    max-width: 800px;
+    text-align: center;
+    background-color: #21c119;
+    color: #1a1a1a;
+    max-width: 400px;
+    /*border-radius define o arredondamento dos cantos do conteúdo */
+    border-radius: 10px;
+    /*font-weight define a espressura da fonte do conteúdo, nesse caso negrito */
+    font-weight: bold;
+}
+
+.content p {
+    margin: 0;
+}
+
+.footer {
+    margin: 30px auto;
+    max-width: 800px;
+}
+
+table {
+    /*width sempre vai ocupar 100% da largura disponível = a margem definida */
+    width: 100%;
+    /*border-collapse define que as bordas da tabela serão colapsadas, ou seja, não haverá espaço entre elas */
+    border-collapse: collapse;
+    /*margin define a margem externa da tabela */
+    margin: 20px auto;
+}
+
+th, td{
+    /*padding define o preenchimento interno das células da tabela */
+    padding: 10px;
+    text-align: left; 
+}
+th {
+    /*background-color define a cor de fundo do cabeçalho da tabela */
+    background-color: #21c119;
+    color: #1a1a1a;
+}
+/*tr:nth-child(even) define que as linhas pares da tabela terão uma cor de fundo diferente */
+/*pseudo seletores pode pesquisar pesquisar no mdn web docs por pseudo selectores*/
+tr:nth-child(even) {
+    /*background-color define a cor de fundo das linhas pares da tabela */
+    background-color: #1a1a1a;
+}
+
+.changer {
+    /*font-weight define a espessura da fonte, nesse caso negrito */
+    font-weight: 900;
+}
