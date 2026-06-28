@@ -26,3 +26,8 @@ console.log("Dados retornados da API:", usuariosAPI);
 let ativos = usuariosAPI.filter(usuario => usuario.ativo === true);
 console.log(ativos); 
 // O JS cria um novo vetor apenas com a Ana e a Beatriz automaticamente!
+
+// Exemplo de uso do fetch com tratamento de erros opcional 
+if (!resposta.ok) {
+            throw new Error(`Falha na requisição: ${resposta.status}`);
+        }
